@@ -5,4 +5,4 @@ torchvision
 Pillow
 numpy
 tqdm
-
+flask_cors

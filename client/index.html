@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bordered {
+        padding: 2rem;
+        width: 80%;
+        margin: 1rem auto;
+      }
+      #display-image {
+        width: 225px;
+        height: 225px;
+        border: 1px solid black;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- JavaScript -->
+
+    <div id="wrapper" class="bordered">
+      <h1 id="header" style="color: green">CS744 Group 4 Project Demo 2</h1>
+      <p>This project is to balabala...</p>
+      <p>Please upload an image</p>
+      <h2 id="result" style="color: red"></h1>
+      <form enctype="multipart/form-data" onsubmit="return false;">
+        <input id="image-input" type="file" name="static_file" />
+        <button id="upload-button" onclick="uploadFile(this.form)">
+          Upload
+        </button>
+      </form>
+      <div id="static_file_response"></div>
+      <!-- <input
+        type="file"
+        id="image-input"
+        accept="image/jpeg, image/png, image/jpg"
+      /> -->
+      <img id="display-image" src="" />
+    </div>
+    <script src="index1.js"></script>
+  </body>
+</html>
