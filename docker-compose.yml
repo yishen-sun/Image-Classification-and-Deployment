@@ -5,7 +5,7 @@ services:
     ports:
       - "5000:5000"
     volumes: 
-      - ./data:/app/data
+      - ./server/data:/app/data
   client:
     build: client/.
     ports:

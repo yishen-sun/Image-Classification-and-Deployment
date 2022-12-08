@@ -9,4 +9,5 @@ RUN pip install -r requirements.txt
 COPY ./inference.py /app/inference.py
 COPY ./flask_api /app/flask_api
 COPY ./src /app/src
+
 CMD python3 /app/inference.py
