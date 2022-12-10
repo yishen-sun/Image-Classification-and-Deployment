@@ -10,3 +10,7 @@ services:
     build: client/.
     ports:
       - "9000:80"
+  auto-client:
+    build: auto-client/.
+    ports:
+      - "9001:80"
