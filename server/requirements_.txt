@@ -1,0 +1,8 @@
+flask
+flask_restful
+torch
+torchvision
+Pillow
+numpy
+tqdm
+flask_cors

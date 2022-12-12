@@ -1,16 +1,23 @@
 version: '3'
 services:
   server: 
+    image: back-end
     build: server/.
     ports:
       - "5000:5000"
     volumes: 
       - ./server/data:/app/data
   client:
+    image: front-end1
     build: client/.
     ports:
       - "9000:80"
   auto-client:
+    image: front-end2
     build: auto-client/.
     ports:
       - "9001:80"
+    volumes: 
+      - ./auto-client/data:/app/data
+      - ./auto-client:/usr/share/nginx/html/
+  

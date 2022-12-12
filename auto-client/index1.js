@@ -39,7 +39,7 @@ function myLoop(form) {
   console.log("Sending file!");
   oReq.send(formData);
   oReq.onload = function () {
-    result.innerHTML = "Loop " + i + " Result is " + this.responseText;   
+    result.innerHTML = "Repeat for " + i + "times. Result is " + this.responseText;   
   };
 
     //-----

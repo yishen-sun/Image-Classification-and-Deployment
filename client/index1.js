@@ -1,6 +1,6 @@
 
-//url = "http://128.110.219.22:5000/api";
-url = "http://localhost:5000/api";
+url = "http://128.110.219.22:5000/api";
+//url = "http://localhost:5000/api";
 const image_input = document.querySelector("#image-input");
 var display_image = document.querySelector("#display-image");
 var result = document.querySelector("#result");
